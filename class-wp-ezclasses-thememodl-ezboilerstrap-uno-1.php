@@ -8,22 +8,12 @@
  * @since 0.5.0
  * @author Mark Simchock
  * @license TODO
- */
+ */ 
  
-/*
+/**
  * == Change Log == 
  *
  */
-
- 
-// No WP? Die! Now!!
-if (!defined('ABSPATH')) {
-	header( 'HTTP/1.0 403 Forbidden' );
-    die();
-}
-?>
-
-<?php
 	
 if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
   class Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1 extends Class_WP_ezClasses_Master_Singleton {	
@@ -34,7 +24,6 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		} 
 		
 		public function ezc_init(){
-		
 		
 		}
 				  
@@ -56,9 +45,13 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			      ),				
 			    ),
 				
-			  'css' => array(
-			    'class_navbar' => 'navbar navbar-inverse navbar-relative-top',
-				'class_navbar_inner' => 'navbar-inner',
+			  'markup' => array(
+			    'wrap_class' => 'container',
+			    'navbar_class' => 'navbar navbar-inverse navbar-relative-top',
+				'navbar_inner_class' => 'navbar-inner',
+				'button_class' => 'navbar-toggle collapsed',
+				'button_data_toggle' => 'collapse',
+				'data_target' => '#wp-ezbs-menu-global-wnm',  // note: this should correspond with the args defined below. also be sure to include the leading # or .
 			    ),
 				
 			  'menu_args' => self::ezm_menu_global_menu_args(),
@@ -75,9 +68,9 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  'description' => 'Global Menu',  // key => description is used for register_nav_menus()
 			  'theme_location' => 'menu_global',
 			  'menu' => 'menu_global',
-			  'container_class' => 'nav-collapse',
+			  'container_class' => 'collapse navbar-collapse bs-navbar-collapse',
 			  'container_id' => 'wp-ezbs-menu-global-wnm',
-			  'menu_class' => 'nav',
+			  'menu_class' => 'nav navbar-nav',
 			  'echo' => false,
 			  'fallback_cb' => false,
 			  'menu_id' => 'wp-ezbs-header-menu-global',
@@ -93,6 +86,13 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		    return array(
 			
 			  'active' => true,
+			  
+			  'markup' => array(
+			    'wrap_id' => 'wp-ezbs-menu-global-class-brand',
+				'wrap_class' => 'bg-info col-xs-12 visible-xs-block',
+				'title_class' => 'TODO',
+				'title' => 'Brand: Global Menu',
+			  ),
 			);
 		  }
 		  
@@ -114,9 +114,13 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			      ),				
 			    ),
 				
-			  'css' => array(
-			    'class_navbar' => 'navbar navbar-inverse navbar-relative-top',
-				'class_navbar_inner' => 'navbar-inner',
+			  'markup' => array(
+			    'wrap_class' => 'container',
+			    'navbar_class' => 'navbar navbar-inverse navbar-relative-top',
+				'navbar_inner_class' => 'navbar-inner',
+				'button_class' => 'navbar-toggle collapsed',
+				'button_data_toggle' => 'collapse',
+				'data_target' => '#wp-ezbs-menu-main-wnm',  // note: this should correspond with the args defined below. also be sure to include the leading # or .
 			    ),
 				
 			  'menu_args' => self::ezm_menu_main_menu_args(),
@@ -133,9 +137,9 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				'description' => 'Main Menu',  // key => description is used for register_nav_menus()
 				'theme_location' => 'menu_main',
 				'menu' => 'menu_main',
-				'container_class' => 'nav-collapse',
+				'container_class' => 'collapse navbar-collapse bs-navbar-collapse',
 				'container_id' => 'wp-ezbs-menu-main-wnm',
-				'menu_class' => 'nav',
+				'menu_class' => 'nav navbar-nav',
 				'echo' => false,
 				'fallback_cb' => false,
 				'menu_id' => 'wp-ezbs-header-menu-main',
@@ -151,6 +155,13 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		    return array(
 			
 			  'active' => true,
+			  
+			  'markup' => array(
+			    'wrap_id' => 'wp-ezbs-menu-main-class-brand',
+				'wrap_class' => 'bg-success col-xs-12 visible-xs-block',
+				'title_class' => 'TODO',
+				'title' => 'Brand: Main Menu',
+			  ),			  
 			);
 		  }
 		  
@@ -172,9 +183,13 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			      ),				
 			    ),
 				
-			  'css' => array(
-			    'class_navbar' => 'navbar navbar-inverse navbar-relative-top',
-				'class_navbar_inner' => 'navbar-inner',
+			  'markup' => array(
+			    'wrap_class' => 'container',
+			    'navbar_class' => 'navbar navbar-inverse navbar-relative-top',
+				'navbar_inner_class' => 'navbar-inner',
+				'button_class' => 'navbar-toggle collapsed',
+				'button_data_toggle' => 'collapse',
+				'data_target' => '#wp-ezbs-menu-footer-wnm',  // note: this should correspond with the args defined below (contanier_id?). also be sure to include the leading # or .
 			    ),
 				
 			  'menu_args' => self::ezm_menu_footer_menu_args(),
@@ -192,9 +207,9 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				'description' => 'Footer Menu',  // key => description is used for register_nav_menus()
 				'theme_location' => 'menu_footer',
 				'menu' => 'menu_footer',
-				'container_class' => 'nav-collapse',
-				'container_id' => 'wp-ezbs-menu-main-wnm',
-				'menu_class' => 'nav',
+				'container_class' => 'collapse navbar-collapse bs-navbar-collapse',
+				'container_id' => 'wp-ezbs-menu-footer-wnm',   
+				'menu_class' => 'nav navbar-nav',
 				'echo' => false,
 				'fallback_cb' => false,
 				'menu_id' => 'wp-ezbs-footer-menu',
@@ -211,11 +226,19 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		    return array(
 			
 			  'active' => true,
+			  
+			  'markup' => array(
+			    'wrap_id' => 'wp-ezbs-menu-footer-class-brand',
+				'wrap_class' => 'bg-danger col-xs-12 visible-xs-block',
+				'title_class' => 'TODO',
+				'title' => 'Brand: Footer Menu',
+			  ),
+			  
 			);
 		  }
 		  
 		  /**
-		   *
+		   * Breadcrumbs control via WPezClasses > ThemeUI > Breadcrumbs_1
 		   */
 		  protected function ezm_breadcrumbs(){
 		  
@@ -223,7 +246,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			
 			/**
 			 * note: if we don't pass in the ezm_breadcrumbs_args() then that class has defaults. as a matter
-			 * of fact these are those defaults simply as a reference / working model.
+			 * of fact ezm_breadcrumbs_args() are those defaults simply as a reference / working model.
 			 */
 			$arr_ret = $obj_ezc_themeui_breadcrumbs->breadcrumbs(self::ezm_breadcrumbs_args()); 
 			
@@ -238,8 +261,8 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			);
 		  }
 		  
-		  		  /**
-		   *
+		  /**
+		   * Defaults for the breadcrumbs control
 		   */
 		  protected function ezm_breadcrumbs_args(){
 		  
@@ -274,6 +297,12 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				  'active' => true
 			      ),
 				  
+			    'before_head_tag_close' => array(
+				  'slug' => 'vue/header/head-before-head-tag-close',
+				  'name' => '',
+				  'active' => true
+				  ),			  
+				  
 			    'header_parent' => array(
 				  'slug' => 'vue/header/header-parent',
 				  'name' => '',
@@ -294,13 +323,6 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			
 			  'active' => true,
 			  
-			  'tp' => array(
-			    'before_head_tag_close' => array(
-				  'slug' => 'vue/header/head-before-head-tag-close',
-				  'name' => '',
-				  'active' => true
-				  ),
-				),
 			  );
 		  }
 
@@ -449,9 +471,12 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			
 			  'active' => true,
 			  
-			  'css' => array(
-			    'class-left' => 'some bootstrap class here',
-				'class-right' => 'some other bootstrap class here',
+			  'markup' => array(
+			    'left_class' => 'col-xs-3 col-lg-2',
+				  'link_class_left' => 'brand',
+				  'img_class' => 'img-responsive',
+				'right_class' => 'col-xs-9 col-lg-10',
+				  'link_class_right' => 'brand',
 				),
 			  );
 		  }
@@ -709,7 +734,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		   */
 			 
 		  /**
-		   *
+		   * For index.php
 		   */
 		  protected function ezm_index(){
 			 
@@ -736,6 +761,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			return array(
 			
 			  'active' => true,
+				
 			  'tp' => array(
 			  
 			    'breadcrumbs' => array(
@@ -958,14 +984,16 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  'markup' => array(
 			    'wrap_class' => 'some BS3 class',
-				'headline_class' => 'some BS3 class',
-				'row_wrap_class' => 'some BS3 class',
-				'row_left_class' => 'some BS3 class',
-				'row_right_class' => 'some BS3 class',
+				'title_tag' => 'h1',
+				'title_class' => 'some BS3 class',
+				'img_wrap_class' => 'some BS3 class',
+				'excerpt_wrap_class' => 'some BS3 class',
+				
 			    'post_id' => 'TODO',
 			    'post_class' => 'TODO',
 				'permalink' => 'TODO',
 				'title' => 'TODO',
+				'post_thumbnail_args' => array(), // http://codex.wordpress.org/Function_Reference/get_the_post_thumbnail
 			    ),
 			
 			  'tp' => array(
@@ -981,6 +1009,38 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				  'name' => '',
 				  'active' => true
 			      ),				    
+			    ),
+			  );
+		  }
+		  
+		  
+		  /**
+		   * Working but a TODO
+		   */
+		  protected function ezm_index_post_meta_above(){	
+			  
+			return array(
+			
+			  'active' => true,
+			  
+			  'markup' => array(
+			    'wrap_class' => 'some BS3 class',
+			    ),
+			  );
+		  }
+
+		  
+		  /**
+		   * Working but a TODO
+		   */
+		  protected function ezm_index_post_meta_below(){	
+			  
+			return array(
+			
+			  'active' => true,
+			  
+			  'markup' => array(
+			    'wrap_class' => 'some BS3 class',
 			    ),
 			  );
 		  }
@@ -1171,16 +1231,17 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  'markup' => array(
 			    'wrap_class' => 'some BS3 class here wp-ezbs-archive-header',
-				'headline_class' => 'headline class',
-				'description_class' => 'archive-meta',
+				'title_tag' => 'h2',
+				'title_class' => 'title class',			// wraps the title
 			    'title' => single_tag_title( '', false ),
 				'description_active' => true,
+				'description_class' => 'archive-meta',
 				'description' => tag_description(),
 			    ),
 			  
 			  );
 
-            if ( is_archive() ){
+            if ( is_archive() || is_tag() || is_author() ){
 			
 			   $arr_args['active'] = true;
 			   
@@ -1207,7 +1268,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  );
 
-            if ( is_archive() ){
+            if ( is_archive() || is_tag() || is_author() ){
 			
 			   $arr_args['active'] = true;
 			   
@@ -1234,7 +1295,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  );
 
-            if ( is_archive() ){
+            if ( is_archive() || is_tag() || is_author() ){
 			
 			   $arr_args['active'] = true;
 			   
@@ -1261,7 +1322,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  );
 
-            if ( is_archive() ){
+            if ( is_archive() || is_tag() || is_author() ){
 			
 			   $arr_args['active'] = true;
 			   
@@ -1288,7 +1349,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  );
 
-            if ( is_archive() ){
+            if ( is_archive() || is_tag() || is_author() ){
 			
 			   $arr_args['active'] = true;
 			   
@@ -1516,6 +1577,12 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  'content' => 'TODO',
 			  
+			  'markup' => array(
+			    'wrap_class' => 'TODO',
+				'title_tag' => 'h1',
+				'title_class' => 'TODO',
+				),
+			  
 			  'tp' => array(
 			  
 			    'title_above' => array(
@@ -1543,9 +1610,6 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    ),
 			  ),
 			  
-			  'css' => array(
-			    'class' => 'TODO',
-				),
 			);
 		  }
 			
@@ -1784,7 +1848,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'content-above',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'content-above-ds-one',
 					),
 				  ),				
@@ -1805,7 +1869,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'content-below',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'content-below-ds-one',
 					),
 				  ),				
@@ -1831,7 +1895,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			      ),
                 ),
 				
-			  'css' => array(
+			  'markup' => array(
 			    'class' => 'some bootstrap class here'
 			    ),
 			  );
@@ -1897,7 +1961,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			      ),
                 ),
 				
-			  'css' => array(
+			  'markup' => array(
 			    'class' => 'some bootstrap class here'
 			    ),
 			  );
@@ -1937,6 +2001,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				  ),
 			    'four' => array(
 				  'active' => true,
+				  'index' => 'aside-right-four',
 				  'css' => array(
 				    'class' => 'aside-right-ds-four',
 					),
@@ -2125,5 +2190,3 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 							
 	} // end class
 }
-
-?>
