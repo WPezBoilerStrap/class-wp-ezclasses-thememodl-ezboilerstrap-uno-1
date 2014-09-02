@@ -255,7 +255,9 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  'active' => true,
 			  
 			  'markup' => array(
-			    'class' => 'TODO some bootstrap class here',
+			    'container_class' => 'container',
+				'row_class' => 'row',
+			    'inner_wrap_class' => 'TODO some bootstrap class here',
 			    'control' => $arr_ret['str_to_return']
 			    ),
 			);
@@ -289,6 +291,13 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 
 		    return array(
 			  'active' => true,
+			  
+			  'markup' => array(
+			    'data_spy' => 'scroll',
+				'data_target' => '.bs-docs-sidebar',
+				'data_offset' => '10',
+			    ),
+				
 			  'tp' => array(
 			  
 			    'head' => array(
@@ -382,7 +391,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'header-above-one',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-above-ds-one',
 					),
 				  ),
@@ -390,7 +399,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'two' => array(
 				  'active' => true,
 				  'index' => 'header-above-two',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-above-ds-two',
 					),
 				  ),
@@ -398,7 +407,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'three' => array(
 				  'active' => true,
 				  'index' => 'header-above-three',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-above-ds-three',
 					),
 				  ),
@@ -406,7 +415,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'four' => array(
 				  'active' => true,
 				  'index' => 'header-above-four',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-above-ds-four',
 					),
 				  ),				  
@@ -422,6 +431,11 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			return array(
 			
 			  'active' => true,
+			  
+			  'markup' => array(
+			    'container_class' => 'container',
+				'row_class' => 'row'
+			    ),
 			  
 			  'tp' => array(
 			  
@@ -454,7 +468,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'header-main-one',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-main-ds-one',
 					),
 				  ),
@@ -495,7 +509,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'header-below-one',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-below-ds-one',
 					),
 				  ),
@@ -503,7 +517,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'two' => array(
 				  'active' => true,
 				  'index' => 'header-below-two',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-below-ds-two',
 					),
 				  ),
@@ -511,7 +525,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'three' => array(
 				  'active' => true,
 				  'index' => 'header-below-three',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-below-ds-three',
 					),
 				  ),
@@ -519,7 +533,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'four' => array(
 				  'active' => true,
 				  'index' => 'header-below-four',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'header-below-ds-four',
 					),
 				  ),				  
@@ -605,7 +619,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'footer-above-one',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-above-ds-one',
 					),
 				  ),
@@ -613,7 +627,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'two' => array(
 				  'active' => true,
 				  'index' => 'footer-above-two',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-above-ds-two',
 					),
 				  ),
@@ -621,7 +635,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'three' => array(
 				  'active' => true,
 				  'index' => 'footer-above-three',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-above-ds-three',
 					),
 				  ),
@@ -629,7 +643,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'four' => array(
 				  'active' => true,
 				  'index' => 'footer-above-four',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-above-ds-four',
 					),
 				  ),				  
@@ -651,7 +665,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'footer-main-one',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-main-ds-one',
 					),
 				  ),
@@ -659,7 +673,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'two' => array(
 				  'active' => true,
 				  'index' => 'footer-main-two',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-main-ds-two',
 					),
 				  ),
@@ -667,7 +681,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'three' => array(
 				  'active' => true,
 				  'index' => 'footer-main-three',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-main-ds-three',
 					),
 				  ),
@@ -675,7 +689,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'four' => array(
 				  'active' => true,
 				  'index' => 'footer-main-four',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-main-ds-four',
 					),
 				  ),				  
@@ -683,7 +697,27 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  );
 		   }
 		   
-		   
+
+		  /**
+		   *
+		   */
+		  protected function ezm_footer_bottom(){
+
+		    return array(
+			
+			  'active' => true,
+			  
+			  'markup' => array(
+			    'container_class' => 'container',
+				'left_class' => 'pull-left',
+				'left_text' => '&copy; ' . get_bloginfo('name') . ' ' . date('Y'),
+				'right_class' => 'pull-right',
+				'right_text' => 'Back to top'
+			    ),
+			  );
+		  }
+
+			  
 		  /**
 		   *
 		   */
@@ -697,7 +731,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'footer-below-one',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-below-ds-one',
 					),
 				  ),
@@ -705,7 +739,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'two' => array(
 				  'active' => true,
 				  'index' => 'footer-below-two',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-below-ds-two',
 					),
 				  ),
@@ -713,7 +747,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'three' => array(
 				  'active' => true,
 				  'index' => 'footer-below-three',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-below-ds-three',
 					),
 				  ),
@@ -721,7 +755,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'four' => array(
 				  'active' => true,
 				  'index' => 'footer-below-four',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'footer-below-ds-four',
 					),
 				  ),				  
@@ -761,6 +795,11 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			return array(
 			
 			  'active' => true,
+			  
+			  'markup' => array(
+			    'container_class' => 'container clearfix',
+				'row_class' => 'row content',
+			  ),
 				
 			  'tp' => array(
 			  
@@ -1080,7 +1119,12 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		   
 		     return array(
 			 
-			   'active' => true,
+			  'active' => true,
+			  
+			  'markup' => array(
+			    'container' => 'container',
+				'row' => 'row',
+			    ),
 			   
 			  'tp' => array(
 			    
@@ -1159,7 +1203,8 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  'markup' => array(
 			    'wrap_class' => 'some bootstrap class here',
-				'title_headline_class' => 'h1-class',
+				'title_tag' => 'h1',
+				'title_class' => 'h1-class',
 			  
 			  ),
 
@@ -1402,6 +1447,11 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			
 			  'active' => true,
 			  
+			  'markup' => array(
+			    'container' => 'container',
+				'row' => 'row content',
+			    ),
+			  
 			  'tp' => array(
 			  
 			    'breadcrumbs' => array(
@@ -1478,13 +1528,15 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		  /**
 		   *
 		   */
-		  protected function ezm_page_center_content(){
+		  protected function ezm_page_content_center(){
 			
 			return array(
 			
 			  'active' => true,
+			  
 			  'markup' => array(
-			    'headline_class' => 'some class here',
+			    'title_tag' => 'h1',
+			    'title_class' => 'some class here',
 				'content_class' => 'some class here',
 			    ),
 				
@@ -1540,6 +1592,9 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  
 			  'markup' => array(
 			    'wrap_class' => 'jumbotron masthead',
+				'container_class' => 'container',
+				'row_class' => 'row content',
+				
 			  ),
 			  
 			  'tp' => array(
@@ -1650,6 +1705,11 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			return array(
 			
 			  'active' => true,
+			  
+			  'markup' => array(
+			    'container' => 'container',
+				'row' => 'row content',
+			    ),
 			  
 			  'tp' => array(
 			  
@@ -1764,9 +1824,11 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  'active' => true,
 			  
 			  'markup' => array(
-			    'title' => '',
-				'title_headline_class' => 'some class here',
-				'query_headline_class' => 'some other class here',
+			    'title_tag' => 'h3',
+				'title_class' => 'some class here',
+			    'title' => 'TODO',
+				'query_tag' => 'h1',
+				'query_class' => 'some other class here',
 				'get_search_query' => get_search_query(),
 			  ),
 			);
@@ -1805,7 +1867,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'title-above',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'title-above-ds-one',
 					),
 				  ),				
@@ -1862,6 +1924,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		  protected function ezm_content_below(){
 		  
 			return array(
+			
 			  'active' => true,
 			  
 			  'ds' => array(
@@ -1886,6 +1949,10 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			
 			  'active' => true,
 			  
+			  'markup' => array(
+			    'wrap_class' => 'some bootstrap class here'
+			    ),			 
+			  
 			  'tp' => array(
 			  
 			    'main' => array(
@@ -1894,11 +1961,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				  'active' => true
 			      ),
                 ),
-				
-			  'markup' => array(
-			    'class' => 'some bootstrap class here'
-			    ),
-			  );
+			);
 		  }
 		  
 		  /**
@@ -1952,6 +2015,10 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			
 			  'active' => true,
 			  
+			  'markup' => array(
+			    'wrap_class' => 'some bootstrap class here'
+			    ),			  
+			  
 			  'tp' => array(
 			  
 			    'main' => array(
@@ -1960,11 +2027,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				  'active' => true
 			      ),
                 ),
-				
-			  'markup' => array(
-			    'class' => 'some bootstrap class here'
-			    ),
-			  );
+			);
 	      }
 
 		  /**
@@ -1981,28 +2044,28 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			    'one' => array(
 				  'active' => true,
 				  'index' => 'aside-right-one',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'aside-right-ds-one',
 					),
 				  ),
 			    'two' => array(
 				  'active' => true,
 				  'index' => 'aside-right-two',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'aside-right-ds-two',
 					),
 				  ),
 			    'three' => array(
 				  'active' => true,
 				  'index' => 'aside-right-three',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'aside-right-ds-three',
 					),
 				  ),
 			    'four' => array(
 				  'active' => true,
 				  'index' => 'aside-right-four',
-				  'css' => array(
+				  'markup' => array(
 				    'class' => 'aside-right-ds-four',
 					),
 				  ),  
@@ -2050,7 +2113,9 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 			  'content' => 'TODO',
 			  
 			  'markup' => array(
-			    'wrap_class' => 'jumbotron subhead clearfix',			  
+			    'wrap_class' => 'jumbotron subhead clearfix',
+				'container_class' => 'container',
+				'row_class' => 'row content',
 			    ),
 				
 			  'tp' => array(
@@ -2084,9 +2149,13 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		  
 			return array(
 			
-			  'active' => true, 
+			  'active' => true,
 			  
 			  'content' => 'TODO',
+			  
+			  'markup' => array(
+			    'class' => 'TODO',
+				),			  
 			  
 			  'tp' => array(
 			  
@@ -2114,10 +2183,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 				  'active' => true
 			    ),
 			  ),
-				'css' => array(
-				  'class' => 'TODO',
-				
-				),
+
 			  );
 		  }
 			  
@@ -2125,20 +2191,24 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Uno_1') ) {
 		   *
 		   */
 		  protected function ezm_404_content_center(){
+		  
 			return array(
 			
 			  'active' => true,
 			  
 			  'content' => 'TODO',
-			  
-			  'headline' => '404_content_center: Headline',
-			  'lead' => '404_content_center: Lead',
-			    
-			  'css' => array(
-			    'class' => 'well',
+			   
+			  'markup' => array(
+			    'title_tag' => 'h1',
+				'title_class' => 'TODO',
+			    'title' => '404_content_center: Headline',
+				'lead_class' => 'lead',
+				'lead' => '404_content_center: Lead',
+			    'inner_wrap_class' => 'well',
 				),
 				
 			  'searchform_custom' => true,					
+			  
 			  'tp' => array(
 			  
 			    'searchform_custom' => array(
